@@ -1,6 +1,4 @@
 from datetime import datetime
-from typing import Union
-
 from pydantic import BaseModel
 
 
@@ -11,11 +9,12 @@ class PriceBase(BaseModel):
 
 
 class PriceCreate(PriceBase):
-    datetime: str = None
+    pass
 
 
 class Price(PriceBase):
     id: int
+    datetime: datetime
 
     class Config:
         orm_mode = True

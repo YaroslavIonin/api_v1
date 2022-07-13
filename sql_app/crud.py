@@ -3,7 +3,7 @@ from http.client import HTTPResponse
 from statistics import mode
 from sqlalchemy.orm import Session
 
-from . import models, schemas
+import models, schemas
 
 
 def get_price(db: Session, id: int):
