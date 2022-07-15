@@ -1,8 +1,5 @@
 from datetime import datetime
-from http.client import HTTPResponse
-from statistics import mode
 from sqlalchemy.orm import Session
-
 import models, schemas
 
 
